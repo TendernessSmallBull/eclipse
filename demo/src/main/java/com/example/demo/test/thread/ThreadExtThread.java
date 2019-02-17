@@ -1,14 +1,14 @@
 package com.example.demo.test.thread;
 /**
- * Description: 创建一个测试线程
+ * Description: 创建一个测试线程（继承Thread方法）
  * @author zx  
  * @date 2019年2月17日
  */
-public class ThreadTestOne extends Thread{
+public class ThreadExtThread extends Thread{
     
     private String threadName;
     
-    public ThreadTestOne(String threadName) {
+    public ThreadExtThread(String threadName) {
         this.threadName = threadName;
     }
 

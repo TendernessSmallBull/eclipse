@@ -8,10 +8,14 @@ package com.example.demo.test.thread;
 public class ThreadMain {
 
     public static void main(String[] args) {
-        ThreadTestOne mTh1 = new ThreadTestOne("A线程");
-        ThreadTestOne mTh2 = new ThreadTestOne("B线程");
-        mTh1.start();
-        mTh2.start();
+        //ThreadExtThread测试
+//        ThreadExtThread mTh1 = new ThreadExtThread("A线程");
+//        ThreadExtThread mTh2 = new ThreadExtThread("B线程");
+//        mTh1.start();
+//        mTh2.start();
+        //ThreadImpRunnable测试
+        new Thread(new ThreadImpRunnable("C线程")).start();  
+        new Thread(new ThreadImpRunnable("D线程")).start();  
     }
 
 }
